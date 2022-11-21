@@ -29,7 +29,7 @@ class Triangle {
     getHeight () {
         return this.height;
     }
-    
+
     getSurfaceArea () {
         return (this.length * this.height) / 2;
     }
