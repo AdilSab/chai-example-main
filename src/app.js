@@ -35,7 +35,22 @@ class Triangle {
     }
 }
 
+class Circle {
+    constructor(radius) {
+        this.radius = radius;
+    }
+
+    getRadius () {
+        return this.radius;
+    }
+
+    getPerimeterArea () {
+        return 2 * Math.PI * this.radius;
+    }
+}
+
 module.exports = {
     Cube:Cube,
-    Triangle:Triangle
+    Triangle:Triangle,
+    Circle:Circle
 }

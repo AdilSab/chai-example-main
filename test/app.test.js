@@ -1,4 +1,5 @@
 const { Triangle } = require('../src/app');
+const { Circle } = require('../src/app');
 
 const Cube = require('../src/app').Cube;
 const expect = require('chai').expect;
@@ -61,4 +62,18 @@ describe('Testing the Triangle Functions', function() {
         done();
     });
     
+});
+
+describe('Testing the Circle Functions', function() {
+    it('1. The radius (int) of the Circle', function(done) {
+        let c1 = new Circle(5);
+        expect(c1.getRadius()).to.equal(5);
+        done();
+    });
+
+    it('2. The surface area (int) of the Circle', function(done) {
+        let c2 = new Circle(1);
+        expect(c2.getPerimeterArea()).to.equal(6.283185307179586);
+        done();
+    });
 });
